@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="32dp">
+
+        <!-- Featured game card - Sky Royale -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSkyRoyale"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="16dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_card_accent">
+
+                <!-- Star decorations -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✦"
+                    android:textColor="#00E5FF"
+                    android:textSize="60sp"
+                    android:alpha="0.08"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginBottom="-10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ÖZEL MOD"
+                        android:textColor="#00E5FF"
+                        android:textSize="10sp"
+                        android:letterSpacing="0.2"
+                        android:background="#1400E5FF"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sky Royale"
+                        android:textColor="#FFFFFF"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 takım · Gökyüzünde hayatta kal · Eğsiz aksiyon"
+                        android:textColor="#8899BB"
+                        android:textSize="12sp"
+                        android:layout_marginTop="4dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvSkyRoyalePlayers"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="... oyuncu"
+                                android:textColor="#00E5FF"
+                                android:textSize="13sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="şu an oynuyor"
+                                android:textColor="#8899BB"
+                                android:textSize="11sp"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/btnPlaySkyRoyale"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:text="OYNA"
+                            android:textColor="#0A0E1A"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:letterSpacing="0.1"
+                            android:gravity="center"
+                            android:background="@drawable/bg_button_cyan"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Section title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DİĞER MODLAR"
+            android:textColor="#8899BB"
+            android:textSize="11sp"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="4dp"/>
+
+        <!-- Coming soon cards -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card">
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="⚔️"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_stat_card"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bedwars"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yatağını koru, düşmanları yok et"
+                        android:textColor="#8899BB"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YAKINDA"
+                    android:textColor="#FF6D00"
+                    android:textSize="10sp"
+                    android:letterSpacing="0.1"
+                    android:background="#14FF6D00"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card">
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="🏹"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_stat_card"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Skywars"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adalar arasında hayatta kal"
+                        android:textColor="#8899BB"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YAKINDA"
+                    android:textColor="#FF6D00"
+                    android:textSize="10sp"
+                    android:letterSpacing="0.1"
+                    android:background="#14FF6D00"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

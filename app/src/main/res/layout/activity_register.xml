@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <!-- Geri butonu -->
+    <TextView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Geri"
+        android:textColor="#8899BB"
+        android:textSize="14sp"
+        android:paddingTop="48dp"
+        android:paddingStart="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/btnBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="40dp">
+
+            <!-- Başlık -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hesap Oluştur"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NX GO'ya katıl ve oynamaya başla"
+                android:textColor="#8899BB"
+                android:textSize="13sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="28dp"/>
+
+            <!-- Kullanıcı adı -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KULLANICI ADI"
+                android:textColor="#8899BB"
+                android:textSize="10sp"
+                android:letterSpacing="0.15"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="En az 3 karakter"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#3A4A6B"
+                android:textSize="15sp"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="16dp"
+                android:inputType="text"
+                android:singleLine="true"/>
+
+            <!-- E-posta -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-POSTA"
+                android:textColor="#8899BB"
+                android:textSize="10sp"
+                android:letterSpacing="0.15"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="ornek@email.com"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#3A4A6B"
+                android:textSize="15sp"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="16dp"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"/>
+
+            <!-- Şifre -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ŞİFRE"
+                android:textColor="#8899BB"
+                android:textSize="10sp"
+                android:letterSpacing="0.15"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="En az 6 karakter"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#3A4A6B"
+                android:textSize="15sp"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="16dp"
+                android:inputType="textPassword"
+                android:singleLine="true"/>
+
+            <!-- Şifre tekrar -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ŞİFREYİ TEKRARLA"
+                android:textColor="#8899BB"
+                android:textSize="10sp"
+                android:letterSpacing="0.15"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etPasswordConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Şifreni tekrar gir"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#3A4A6B"
+                android:textSize="15sp"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="16dp"
+                android:inputType="textPassword"
+                android:singleLine="true"/>
+
+            <!-- Hata mesajı -->
+            <TextView
+                android:id="@+id/tvError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#FF5252"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"/>
+
+            <!-- Kayıt butonu -->
+            <TextView
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="HESAP OLUŞTUR"
+                android:textColor="#0A0E1A"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1"
+                android:gravity="center"
+                android:background="@drawable/bg_button_cyan"
+                android:layout_marginTop="28dp"/>
+
+            <!-- Giriş linki -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zaten hesabın var mı?  "
+                    android:textColor="#8899BB"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/btnGoLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giriş Yap"
+                    android:textColor="#00E5FF"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

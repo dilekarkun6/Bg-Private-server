@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="40dp">
+
+        <!-- Profil Kartı -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:gravity="center"
+                android:background="@drawable/bg_card_accent">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:text="★"
+                    android:textColor="#FFFFFF"
+                    android:textSize="36sp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_avatar"/>
+
+                <TextView
+                    android:id="@+id/tvUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oyuncu"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4dp">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="⭐" android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SEVİYE 1"
+                        android:textColor="#FFD700"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.1"
+                        android:layout_marginStart="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- İstatistikler -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İSTATİSTİKLER"
+            android:textColor="#8899BB"
+            android:textSize="11sp"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="4dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_columnWeight="1" android:orientation="vertical"
+                android:padding="16dp" android:gravity="center"
+                android:background="@drawable/bg_stat_card" android:layout_margin="4dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🏆" android:textSize="28sp"/>
+                <TextView android:id="@+id/tvWins" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="0"
+                    android:textColor="#FFFFFF" android:textSize="28sp" android:textStyle="bold"
+                    android:layout_marginTop="4dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="GALİBİYET" android:textColor="#8899BB" android:textSize="10sp"
+                    android:letterSpacing="0.1"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_columnWeight="1" android:orientation="vertical"
+                android:padding="16dp" android:gravity="center"
+                android:background="@drawable/bg_stat_card" android:layout_margin="4dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="⚔️" android:textSize="28sp"/>
+                <TextView android:id="@+id/tvKills" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="0"
+                    android:textColor="#FFFFFF" android:textSize="28sp" android:textStyle="bold"
+                    android:layout_marginTop="4dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="ÖLDÜRME" android:textColor="#8899BB" android:textSize="10sp"
+                    android:letterSpacing="0.1"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_columnWeight="1" android:orientation="vertical"
+                android:padding="16dp" android:gravity="center"
+                android:background="@drawable/bg_stat_card" android:layout_margin="4dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🎮" android:textSize="28sp"/>
+                <TextView android:id="@+id/tvGames" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="0"
+                    android:textColor="#FFFFFF" android:textSize="28sp" android:textStyle="bold"
+                    android:layout_marginTop="4dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="OYUN" android:textColor="#8899BB" android:textSize="10sp"
+                    android:letterSpacing="0.1"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_columnWeight="1" android:orientation="vertical"
+                android:padding="16dp" android:gravity="center"
+                android:background="@drawable/bg_stat_card" android:layout_margin="4dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="📊" android:textSize="28sp"/>
+                <TextView android:id="@+id/tvWinRate" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="0%"
+                    android:textColor="#00E5FF" android:textSize="28sp" android:textStyle="bold"
+                    android:layout_marginTop="4dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="KAZANMA" android:textColor="#8899BB" android:textSize="10sp"
+                    android:letterSpacing="0.1"/>
+            </LinearLayout>
+        </GridLayout>
+
+        <!-- Ayarlar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AYARLAR"
+            android:textColor="#8899BB"
+            android:textSize="11sp"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="4dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="52dp"
+                    android:orientation="horizontal" android:paddingHorizontal="16dp"
+                    android:gravity="center_vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🌐" android:textSize="18sp" android:layout_marginEnd="12dp"/>
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Dil"
+                        android:textColor="#FFFFFF" android:textSize="14sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Türkçe ›" android:textColor="#8899BB" android:textSize="13sp"/>
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="@color/divider" android:layout_marginHorizontal="16dp"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="52dp"
+                    android:orientation="horizontal" android:paddingHorizontal="16dp"
+                    android:gravity="center_vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="ℹ️" android:textSize="18sp" android:layout_marginEnd="12dp"/>
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Hakkında"
+                        android:textColor="#FFFFFF" android:textSize="14sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="v1.0.0 ›" android:textColor="#8899BB" android:textSize="13sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Çıkış Butonu -->
+        <TextView
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="ÇIKIŞ YAP"
+            android:textColor="#FF5252"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:gravity="center"
+            android:background="@drawable/bg_card"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

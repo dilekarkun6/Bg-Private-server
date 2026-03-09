@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Arka plan gradient mavi -->
+    <path android:fillColor="#0A1628" android:pathData="M0,0h108v108h-108z"/>
+
+    <!-- Parıltı efektleri -->
+    <path android:fillColor="#1A3A6B" android:pathData="M0,108 L50,0 L108,60 Z" android:fillAlpha="0.4"/>
+    <path android:fillColor="#00E5FF" android:pathData="M108,0 L60,108 L0,50 Z" android:fillAlpha="0.08"/>
+
+    <!-- Kafanın gövdesi (kare/blok) -->
+    <rect android:x="28" android:y="30" android:width="52" android:height="48"
+        android:fillColor="#4DAAFF"/>
+    <!-- Yüz tonu -->
+    <rect android:x="32" android:y="34" android:width="44" android:height="38"
+        android:fillColor="#7DC8FF"/>
+
+    <!-- Gözler - mavi parlak -->
+    <rect android:x="36" android:y="42" android:width="12" android:height="10"
+        android:fillColor="#FFFFFF"/>
+    <rect android:x="60" android:y="42" android:width="12" android:height="10"
+        android:fillColor="#FFFFFF"/>
+    <!-- Göz bebekleri -->
+    <rect android:x="40" android:y="44" android:width="6" android:height="6"
+        android:fillColor="#00B4FF"/>
+    <rect android:x="64" android:y="44" android:width="6" android:height="6"
+        android:fillColor="#00B4FF"/>
+    <!-- Göz parlaması -->
+    <rect android:x="41" android:y="45" android:width="2" android:height="2"
+        android:fillColor="#FFFFFF"/>
+    <rect android:x="65" android:y="45" android:width="2" android:height="2"
+        android:fillColor="#FFFFFF"/>
+
+    <!-- Ağız/Gülümseme -->
+    <rect android:x="42" android:y="58" android:width="24" android:height="4"
+        android:fillColor="#1A6FD4"/>
+    <rect android:x="38" android:y="58" android:width="6" android:height="4"
+        android:fillColor="#1A6FD4"/>
+    <rect android:x="64" android:y="58" android:width="6" android:height="4"
+        android:fillColor="#1A6FD4"/>
+
+    <!-- Kulaklık bandı -->
+    <rect android:x="22" android:y="28" android:width="64" android:height="8"
+        android:fillColor="#00E5FF"/>
+    <!-- Kulaklık yastıkları -->
+    <rect android:x="18" android:y="34" android:width="14" android:height="18"
+        android:fillColor="#00B4FF"/>
+    <rect android:x="76" android:y="34" android:width="14" android:height="18"
+        android:fillColor="#00B4FF"/>
+    <!-- Kulaklık iç -->
+    <rect android:x="21" android:y="37" android:width="8" android:height="12"
+        android:fillColor="#0066CC"/>
+    <rect android:x="79" android:y="37" android:width="8" android:height="12"
+        android:fillColor="#0066CC"/>
+
+    <!-- Gözlük çerçevesi -->
+    <rect android:x="33" android:y="39" android:width="18" android:height="16"
+        android:fillColor="#00E5FF" android:fillAlpha="0.0"/>
+    <path android:strokeColor="#00E5FF" android:strokeWidth="2"
+        android:pathData="M33,39 L51,39 L51,55 L33,55 Z" android:fillColor="#00000000"/>
+    <path android:strokeColor="#00E5FF" android:strokeWidth="2"
+        android:pathData="M57,39 L75,39 L75,55 L57,55 Z" android:fillColor="#00000000"/>
+    <path android:strokeColor="#00E5FF" android:strokeWidth="2"
+        android:pathData="M51,47 L57,47" android:fillColor="#00000000"/>
+
+    <!-- Alt kısım - boyun/gövde -->
+    <rect android:x="36" android:y="78" android:width="36" android:height="16"
+        android:fillColor="#2979FF"/>
+
+    <!-- NX GO yazısı -->
+    <path android:fillColor="#FFFFFF" android:fillAlpha="0.95"
+        android:pathData="M20,96 L24,96 L28,102 L28,96 L32,96 L32,108 L28,108 L24,102 L24,108 L20,108 Z"/>
+    <path android:fillColor="#00E5FF"
+        android:pathData="M34,96 L46,96 L46,100 L38,100 L38,102 L44,102 L44,105 L38,105 L38,108 L34,108 Z"/>
+    <path android:fillColor="#FFFFFF" android:fillAlpha="0.95"
+        android:pathData="M48,96 L52,96 L56,102 L60,96 L64,96 L64,108 L60,108 L60,100 L56,104 L52,100 L52,108 L48,108 Z"/>
+    <path android:fillColor="#00E5FF"
+        android:pathData="M66,102 C66,98.7 68.7,96 72,96 C75.3,96 78,98.7 78,102 C78,105.3 75.3,108 72,108 L68,108 L68,105 L72,105 C73.7,105 75,103.7 75,102 C75,100.3 73.7,99 72,99 C70.3,99 69,100.3 69,102 L69,104 L66,104 Z"/>
+
+    <!-- Parlama efekti sol üst -->
+    <path android:fillColor="#FFFFFF" android:fillAlpha="0.06"
+        android:pathData="M0,0 L40,0 L0,40 Z"/>
+</vector>

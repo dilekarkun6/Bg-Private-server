@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">NX GO</string>
+    <string name="tab_games">Oyunlar</string>
+    <string name="tab_profile">Profil</string>
+    <string name="login_title">NX GO\'ya Hoş Geldin</string>
+    <string name="login_subtitle">Hesabına giriş yap</string>
+    <string name="label_username">Kullanıcı Adı</string>
+    <string name="label_password">Şifre</string>
+    <string name="btn_login">GİRİŞ YAP</string>
+    <string name="btn_register">KAYIT OL</string>
+    <string name="no_account">Hesabın yok mu?</string>
+    <string name="has_account">Zaten hesabın var mı?</string>
+    <string name="register_title">Hesap Oluştur</string>
+    <string name="label_email">E-posta</string>
+    <string name="label_confirm_password">Şifreyi Tekrarla</string>
+    <string name="error_fill_all">Tüm alanları doldur</string>
+    <string name="error_passwords_no_match">Şifreler eşleşmiyor</string>
+    <string name="error_username_taken">Bu kullanıcı adı alınmış</string>
+    <string name="success_register">Hesap oluşturuldu!</string>
+    <string name="version">v1.0.0 ALPHA</string>
+</resources>
